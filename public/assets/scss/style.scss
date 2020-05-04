@@ -138,3 +138,57 @@
 /*------------------------------------
     In Development
 ------------------------------------*/
+
+// Sample
+.sample {
+    .sample-child {
+        h1 {
+        }
+        h2 {
+        }
+        h3 {
+        }
+    }
+    &:hover {
+    }
+    &:before {
+    }
+    &:after {
+    }
+}
+
+// Sample 1
+.sample-1 {
+    .sample-child {
+        h1 {
+        }
+        h2 {
+        }
+        h3 {
+        }
+    }
+    &:hover {
+    }
+    &:before {
+    }
+    &:after {
+    }
+}
+
+// Sample 2
+.sample-2 {
+    .sample-child {
+        h1 {
+        }
+        h2 {
+        }
+        h3 {
+        }
+    }
+    &:hover {
+    }
+    &:before {
+    }
+    &:after {
+    }
+}
