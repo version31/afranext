@@ -1,7 +1,7 @@
 /*------------------------------------
 
     Theme Name  : Afra Next
-    Theme URI   : 
+    Theme URI   :
     Description : AfraNext - React Degital Agency Template
     Author Name : Afracode
     Author URI  : http://afracode.com
@@ -9,7 +9,7 @@
 
 ------------------------------------*/
 /*------------------------------------
-    
+
     STYLESHEET INDEXING
     |
     |
@@ -139,56 +139,27 @@
     In Development
 ------------------------------------*/
 
-// Sample
-.sample {
-    .sample-child {
-        h1 {
-        }
-        h2 {
-        }
-        h3 {
-        }
+/*------------------------------------
+    Element: Heading
+------------------------------------*/
+
+.el-heading {
+    p {
+        color: $text-color;
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 39px;
     }
-    &:hover {
+
+    h1 {
+        margin-bottom: 30px;
     }
-    &:before {
-    }
-    &:after {
+
+    h2 {
+        margin-bottom: 15px;
     }
 }
 
-// Sample 1
-.sample-1 {
-    .sample-child {
-        h1 {
-        }
-        h2 {
-        }
-        h3 {
-        }
-    }
-    &:hover {
-    }
-    &:before {
-    }
-    &:after {
-    }
-}
-
-// Sample 2
-.sample-2 {
-    .sample-child {
-        h1 {
-        }
-        h2 {
-        }
-        h3 {
-        }
-    }
-    &:hover {
-    }
-    &:before {
-    }
-    &:after {
-    }
-}
+/*------------------------------------
+    Section: Hero
+------------------------------------*/

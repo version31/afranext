@@ -1,16 +1,17 @@
 /*------------------------------------
-    Google Font  
+    Google Font
 ------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900|Poppins:300,400,500,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900|Nunito:300,400,500,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
 /*------------------------------------
     Typography
 ------------------------------------*/
 
 body {
-	font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+    font-family: 'Nunito', sans-serif;
 }
 p {
 	color: $text-color;

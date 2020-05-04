@@ -8,19 +8,18 @@ $base-0: #fff;
 $base-1: #000;
 $base-2: "";
 $base-3: "";
-$primary: #f9004d;
-$primary: blue;
+$primary: #2668EF;
 $primary-1: #262bdb;
 $primary-1: darkblue;
 $primary-2: #3c41df;
-$secondary: "";
+$secondary: "#FED456";
 $secondary-1: "";
 $secondary-2: "";
 $white: #fff;
 $black: #000;
 
 // Font Family
-$font-family-1: "Poppins", sans-serif;
+$font-family-1: "Nunito", sans-serif;
 $font-family-2: "";
 
 // Grid
@@ -65,7 +64,7 @@ $border-color: $primary;
 
 $space: 120px;
 
-$text-color: #333;
+$text-color: $black;
 $danger: #dc3545;
 $success: #28a745;
 
