@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 
 // Stylesheet
+import "./index.scss";
 
 // Scenes
 
