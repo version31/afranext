@@ -8,11 +8,13 @@ import "./index.scss";
 
 // Scenes
 import Sample from "./scenes/sample/Sample";
+import Home from "./scenes/home/Home";
 
 const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
+                <Route exact path={`${process.env.PUBLIC_URL}/home`} component={Home} />
                 <Route exact path={`${process.env.PUBLIC_URL}/sample`} component={Sample} />
             </Switch>
         </BrowserRouter>
