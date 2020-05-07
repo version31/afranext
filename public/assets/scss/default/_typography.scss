@@ -10,12 +10,12 @@
 ------------------------------------*/
 
 body {
-	font-size: 16px;
+	font-size: 18px;
     font-family: 'Nunito', sans-serif;
 }
 p {
 	color: $text-color;
-	line-height: 1.8;
+	line-height: 1.5;
 }
 a {
 	transition: all .4s ease-in-out 0s;
@@ -99,7 +99,7 @@ h2,
 .h2,
 h3,
 .h3 {
-	font-weight: 600;
+	font-weight: 700;
 }
 h4,
 .h4,

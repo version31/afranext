@@ -9,7 +9,7 @@ Buttons
     border-radius: 3px;
     white-space: nowrap;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 .button-block {
     width: 100%;
@@ -105,16 +105,17 @@ Buttons
 .button-primary:hover {
     color: #fff;
     background-color: $primary-1;
+    font-weight: 600;
 }
 
 .button-secondary {
-    color: #fff;
+    color: #000;
     background-color: $secondary;
 }
 
 .button-secondary:hover {
-    color: #fff;
     background-color: $secondary-1;
+    font-weight: 600;
 }
 
 .button-gradient {
@@ -185,6 +186,13 @@ Buttons
     height: 60px;
     font-size: 18px;
     line-height: 60px;
+    text-align: center;
+}
+.button-icon-xl {
+    width: 72px;
+    height: 72px;
+    font-size: 24px;
+    line-height: 78px;
     text-align: center;
 }
 

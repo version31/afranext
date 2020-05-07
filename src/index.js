@@ -14,8 +14,8 @@ const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
+                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Sample} />
                 <Route exact path={`${process.env.PUBLIC_URL}/home`} component={Home} />
-                <Route exact path={`${process.env.PUBLIC_URL}/sample`} component={Sample} />
             </Switch>
         </BrowserRouter>
     );

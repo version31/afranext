@@ -1,8 +1,8 @@
 /*------------------------------------
 
-    Theme Name  : Afra Next
+    Theme Name  : Next
     Theme URI   :
-    Description : AfraNext - React Degital Agency Template
+    Description : Next - React Digital Agency Template
     Author Name : Afracode
     Author URI  : http://afracode.com
     Version     : 1.0
@@ -15,15 +15,15 @@
     |
     |___ Default Styles
     |	|
-    |   |___ variables
+    |   |___ animations
+    |   |___ Helpers
     |   |___ mixins
     |   |___ reset
-    |   |___ typography
-    |   |___ extend
-    |   |___ animations
-    |   |___ shortcode
+    |   |___ shortCode
     |   |___ spacing
-    |   |___ Helpers
+    |   |___ typography
+    |   |___ variables
+    |   |___ extend
     |
     |
     |___ Structure Styles
@@ -96,6 +96,7 @@
 @import "default/shortcode";
 @import "default/spacing";
 @import "default/helpers";
+@import "default/next-helpers";
 
 /*------------------------------------
     Structure Styles
@@ -144,6 +145,8 @@
 ------------------------------------*/
 
 .el-heading {
+    margin-bottom: 69px;
+
     p {
         color: $text-color;
         font-size: 21px;
@@ -156,10 +159,93 @@
     }
 
     h2 {
-        margin-bottom: 15px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    &.center {
+        text-align: center;
+        max-width: 720px;
+        margin: 0 auto ($space - 21);
+    }
+}
+
+.section {
+    position: relative;
+}
+
+/*------------------------------------
+    Section: Story
+------------------------------------*/
+
+.section-story-1 {
+    .story-image {
+        height: 100%;
+        position: relative;
+
+        img {
+            bottom: 0;
+            position: absolute;
+        }
+    }
+    .story-item {
+        position: relative;
+        padding-left: 105px;
+        margin-bottom: 45px;
+
+        h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+
+    .display-spacing:nth-child(even) .column-1 {
+        order: 2;
+    }
+
+    .display-spacing:nth-child(even) .column-2 {
+        order: 1;
     }
 }
 
 /*------------------------------------
-    Section: Hero
+    Section: Features
 ------------------------------------*/
+
+.section-features-1 {
+    .feature-item {
+        text-align: center;
+        padding: 45px 30px;
+        margin-bottom: 30px;
+
+        p {
+            color: $text-color;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            width: 100px;
+            overflow: hidden;
+            margin: 0 auto 30px;
+        }
+
+        &:hover {
+            @extend .shadow-3;
+        }
+    }
+}
+
+
+
+@import "next-style";
