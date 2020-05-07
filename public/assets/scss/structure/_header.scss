@@ -3,5 +3,18 @@
 ------------------------------------*/
 
 .app-header {
-    
+    height: 90px;
+    display: none;
+    background-color: blue;
+
+    .header-logo {
+    }
+    .header-menu {
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
 }
