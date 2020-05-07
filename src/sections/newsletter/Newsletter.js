@@ -29,7 +29,8 @@ cras nice one boot fanny."/>
 
                         </Col>
                         <Col xl={4} >
-                            <img src="/assets/images/phones/iPhoneX-Right.png" alt="alt"/>
+                            <img className="left" src="/assets/images/phones/iPhoneX-left.png" alt="alt"/>
+                            <img className="right" src="/assets/images/phones/iPhoneX-Right.png" alt="alt"/>
                         </Col>
                     </Row>
                 </Container>

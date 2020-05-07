@@ -40,8 +40,8 @@ function Blog(props) {
                                     <div className="content">
                                         <h3>{item.title}</h3>
                                         <p>{item.body}</p>
-                                        <button className="button button-md button-primary button-shape div-center">
-                                            Arrow
+                                        <button className="button button-md button-primary button-shape button-arrow">
+                                            <span className="icon-arrow arrow-right"></span>
                                         </button>
                                     </div>
                                 </div>

@@ -8,10 +8,12 @@ import Features from "../../sections/features/Features";
 import Story from "../../sections/story/Story";
 import Newsletter from "../../sections/newsletter/Newsletter";
 import Blog from "../../sections/blog/Blog";
+import Quote from "../../sections/quote/Quote";
 
 function Home() {
     return (
         <>
+            <Header/>
             <section className="section section-hero section-hero-1">
                 <div className="display-center">
                     <Container>
@@ -38,8 +40,14 @@ function Home() {
             <Features/>
             <Story/>
             <Newsletter/>
-
            <Blog/>
+
+            <Quote/>
+
+
+
+
+
         </>
     )
 }

@@ -36,8 +36,8 @@ function Features(props) {
                                     </div>
                                     <h3>{value.title}</h3>
                                     <p>{value.description}</p>
-                                    <button className="button button-md button-primary button-shape">
-                                        Arrow
+                                    <button className="button button-md button-primary button-shape button-arrow">
+                                        <span className="icon-arrow arrow-right"></span>
                                     </button>
                                 </div>
                             </Col>

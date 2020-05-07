@@ -4,13 +4,15 @@ Buttons
 
 .button {
     overflow: hidden;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     border-radius: 3px;
     white-space: nowrap;
     display: inline-block;
     transition: all 0.1s;
+
 }
+
 .button-block {
     width: 100%;
     float: inherit;
@@ -130,21 +132,22 @@ Buttons
 
 .button-line-light {
     color: $base-0;
-    border: 1px solid $base-0;
+    border: 2px solid $base-0;
 }
+
 .button-line-dark {
     color: $base-1;
-    border: 1px solid $base-1;
+    border: 2px solid $base-1;
 }
 
 .button-line-primary {
     color: $primary;
-    border: 1px solid $primary;
+    border: 2px solid $primary;
 }
 
 .button-line-secondary {
     color: $secondary;
-    border: 1px solid $secondary;
+    border: 2px solid $secondary;
 }
 
 /*
@@ -181,6 +184,7 @@ Buttons
     line-height: 45px;
     text-align: center;
 }
+
 .button-icon-lg {
     width: 60px;
     height: 60px;
@@ -188,6 +192,7 @@ Buttons
     line-height: 60px;
     text-align: center;
 }
+
 .button-icon-xl {
     width: 72px;
     height: 72px;
@@ -206,6 +211,7 @@ Buttons
         opacity: 0.15;
         position: absolute;
     }
+
     &.button-alt-primary {
         color: $primary;
 
@@ -213,6 +219,7 @@ Buttons
             background-color: $primary-1;
         }
     }
+
     &.button-alt-secondary {
         color: $secondary;
 
@@ -227,4 +234,80 @@ Buttons
 .button-shape {
     border-radius: 36px;
     border-top-right-radius: 0;
+}
+
+
+.button-arrow {
+    .icon-arrow {
+        width: 45px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: #fff;
+
+        &.arrow-left {
+            &:before,
+            &:after {
+                left: 0;
+                width: 10px;
+                height: 2px;
+                content: "";
+                position: absolute;
+                background-color: #fff;
+            }
+
+            &:before {
+                top: -4px;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                bottom: -4px;
+                transform: rotate(45deg);
+            }
+        }
+
+        &.arrow-right {
+            &:before,
+            &:after {
+                right: 0;
+                width: 10px;
+                height: 2px;
+                content: "";
+                position: absolute;
+                background-color: #fff;
+            }
+
+            &:before {
+                top: -4px;
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                bottom: -4px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &.button-secondary,
+    &.button-primary {
+        .icon-arrow {
+            background: white ;
+            &:before,
+            &:after {
+                background: white;
+            }
+        }
+    }
+
+    &.button-default {
+        .icon-arrow {
+            background: $primary ;
+            &:before,
+            &:after {
+                background: $primary ;
+            }
+        }
+    }
 }

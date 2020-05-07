@@ -8,7 +8,7 @@ function Story(props) {
     return (
         <section className="section section-story section-story-1">
             <div className="display-spacing">
-                <Container>
+                <Container className="story-container">
                     <Row className="mb--45">
                         <Col xl={6} className="column column-1">
                             <Heading title="Get tips & tricks on how to skyrocket your sales." description="Faff about only a quid blower I don’t want
@@ -42,9 +42,7 @@ cras nice one boot fanny."/>
                         </Col>
                     </Row>
                 </Container>
-            </div>
-            <div className="display-spacing">
-                <Container>
+                <Container className="story-container">
                     <Row className="mb--45">
                         <Col xl={6} className="column column-1">
                             <Heading title="Get tips & tricks on how to skyrocket your sales." description="Faff about only a quid blower I don’t want
@@ -78,9 +76,7 @@ cras nice one boot fanny."/>
                         </Col>
                     </Row>
                 </Container>
-            </div>
-            <div className="display-spacing">
-                <Container>
+                <Container className="story-container">
                     <Row className="mb--45">
                         <Col xl={6} className="column column-1">
                             <Heading title="Get tips & tricks on how to skyrocket your sales." description="Faff about only a quid blower I don’t want
