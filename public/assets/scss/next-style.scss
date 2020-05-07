@@ -65,3 +65,50 @@
     }
 }
 
+/*------------------------------------
+    Blog
+------------------------------------*/
+.section-blog-1 {
+    .card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        border: solid 1px black;
+
+        .avatar {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 60%;
+
+            margin-bottom: 16px;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        .content {
+            padding: 15px 30px;
+            text-align: center;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h3 , p {
+                text-align: left;
+            }
+
+
+            button {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+}
