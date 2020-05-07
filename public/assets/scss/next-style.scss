@@ -1,0 +1,67 @@
+/*------------------------------------
+    Dev tools
+------------------------------------*/
+.dev-size {
+    min-height: 300px !important;
+    min-width: 300px !important;
+}
+
+.dev-bg-1 {
+    background: #ffbc5b;
+}
+
+.dev-bg-2 {
+    background: yellow;
+}
+
+.dev-border {
+    border: solid 1px red;
+}
+/*------------------------------------
+    Newsletter
+------------------------------------*/
+.section-newsletter-1 {
+    background: $primary;
+
+    h2 , p {
+        color: white !important;
+    }
+    .input-group {
+        display: block;
+        background: white;
+        border-radius: 36px 0 36px 36px;
+        position: relative;
+        width: 100%;
+        height: 61px;
+        padding: 8px;
+
+        input {
+            position: absolute;
+            height: 50px;
+            left: 12px;
+            width: 68%;
+            font-weight: 500;
+            font-size: 18px;
+            @include placeholder {
+                color: #999;
+            }
+        }
+
+        .input-group-append {
+            position: absolute;
+            width: 30%;
+            height: 50px;
+            right: 8px;
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+
+    img {
+        transform: rotate(-20deg);
+        width: 90%;
+        margin-left: 30%;
+    }
+}
+
