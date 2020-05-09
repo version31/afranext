@@ -105,7 +105,7 @@
         background: white;
         border-radius: 16px;
         overflow: hidden;
-        border: solid 1px black;
+        border: solid 2px black;
 
         .avatar {
             width: 100%;
@@ -440,6 +440,126 @@
     }
 
 
+
+
+}
+
+/*------------------------------------
+    DesignStory
+------------------------------------*/
+
+.process-holder {
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: $space;
+}
+
+
+/*------------------------------------
+    Welcome Next Hero
+------------------------------------*/
+
+.square {
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    background: $secondary;
+    position: absolute;
+}
+
+.square.one {
+    background: #a2daf7;
+    left: 1%;
+    bottom: 30%;
+    -webkit-animation: spin1 2.1s infinite alternate;
+    animation: spin1 2.1s infinite alternate;
+}
+
+
+.square.two {
+    background: #fff;
+    left: 22%;
+    bottom: 38%;
+    -webkit-animation: spin1 3s infinite alternate;
+    animation: spin1 3s infinite alternate;
+}
+
+
+.square.three {
+    background: #a2daf7;
+    left: 89%;
+    bottom: 64%;
+    -webkit-animation: spin 1.8s infinite alternate;
+    animation: spin 1.8s infinite alternate;
+}
+
+
+.section-hero-2 {
+    height: 100vh;
+    min-height: 600px;
+
+    .img-holder {
+        position: absolute;
+        right: 9%;
+        bottom: 15%;
+        width: 768px;
+        background: no-repeat bottom center / contain;
+
+        float: right;
+
+
+        .inner {
+
+            padding-top: 100%;
+            width: 100%;
+            .lamp {
+                position: absolute;
+                left:0;
+                right:0;
+                margin: auto;
+                width: 38%;
+                bottom: 5%;
+                animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+                animation-name: animateUpDown;
+                animation-iteration-count: infinite;
+                animation-duration: 3.6s;
+            }
+
+            .girl{
+                position: absolute;
+                left:0;
+                button:0;
+                width: 22%;
+                bottom: 2px;
+                left:20%;
+            }
+
+
+            .heart {
+                position: absolute;
+                left:0;
+                left:12%;
+                bottom:42%;
+                width: 8%;
+            }
+
+            .like {
+                position: absolute;
+                left:0;
+                left:75%;
+                bottom:55%;
+                width: 8%;
+            }
+
+            .resize {
+                position: absolute;
+                left:0;
+                left:92%;
+                bottom:45%;
+                width: 6%;
+            }
+        }
+    }
 
 
 }
