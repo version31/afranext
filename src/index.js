@@ -12,14 +12,25 @@ import "./index.scss";
 
 // Scenes
 import Sample from "./scenes/sample/Sample";
-import Home from "./scenes/home/Home";
+import Landing1 from "./scenes/landing/Landing1";
+import Landing2 from "./scenes/landing/Landing2";
+
+import Welcome from "./scenes/pages/Welcome";
+import Design from "./scenes/pages/Design";
+import Web from "./scenes/pages/Web";
 
 const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
-                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Sample} />
-                <Route exact path={`${process.env.PUBLIC_URL}/home`} component={Home} />
+                <Route exact path={`${process.env.PUBLIC_URL}/landing1`} component={Landing1} />
+                <Route exact path={`${process.env.PUBLIC_URL}/landing2`} component={Landing2} />
+
+                <Route exact path={`${process.env.PUBLIC_URL}/sample`} component={Sample} />
+                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Welcome} />
+                <Route exact path={`${process.env.PUBLIC_URL}/design`} component={Design} />
+                <Route exact path={`${process.env.PUBLIC_URL}/web-development`} component={Web} />
+
             </Switch>
         </BrowserRouter>
     );

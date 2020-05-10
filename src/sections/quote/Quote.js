@@ -8,7 +8,7 @@ import Heading from "../../components/common/Heading";
 
 function Quotes() {
     return (
-        <div className="section section-testimonial section-testimonial-2">
+        <section className="section section-testimonial section-testimonial-2">
             <div className="display-spacing">
                 <Heading title="Customers are lovin’ it"
                          description="Check testimonials for our satisfied clients" position="center"/>
@@ -67,7 +67,7 @@ function Quotes() {
                     </Slider1>
                 </Container>
             </div>
-        </div>
+        </section>
     );
 }
 
