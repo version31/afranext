@@ -1,25 +1,24 @@
 import React from 'react';
 
 import HeaderNext from "../../components/header/HeaderNext";
-import HeroNextWeb from "../../sections/hero/HeroNextDesign";
+import HeroNextWeb from "../../sections/hero/HeroNextWeb";
 import FeaturesNext from "../../sections/features/FeaturesNext";
 import Story from "../../sections/story/Story";
 import Newsletter from "../../sections/newsletter/Newsletter";
 import Blog from "../../sections/blog/Blog";
 import Quote from "../../sections/quote/Quote";
-import StoryDesign from "../../sections/story/StoryDesign";
 import Footer from "../../components/footer/Footer";
 import Process from "../../sections/process/Process";
+import StoryWeb from "../../sections/story/StoryWeb";
 
-function Design() {
+function Web() {
     return (
         <>
-            <HeaderNext/>
             <HeroNextWeb/>
-            <StoryDesign/>
+            <StoryWeb/>
             <Footer/>
         </>
     )
 }
 
-export default Design;
+export default Web;

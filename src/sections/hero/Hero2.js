@@ -6,17 +6,16 @@ import Header from "../../components/header/Header";
 
 
 
-function HeaderNext() {
+function Hero2() {
     return (
         <>
             <section className="section section-hero section-hero-2">
+
                 <div className="display-center">
                     <Container>
                         <Row>
                             <Col xl={6}>
-                                <Heading
-                                    h1="One idea can change the world."
-                                    h1="One idea can change the world. New ideas will discover new worlds."
+                                <Heading h1="One idea can change the world. New ideas will discover new worlds."
                                 />
 
 
@@ -43,4 +42,4 @@ function HeaderNext() {
     );
 }
 
-export default HeaderNext;
+export default Hero2;
