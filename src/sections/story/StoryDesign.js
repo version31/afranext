@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from "react-grid-system";
-import {FaGem, FaCrown, FaSend} from "react-icons/all";
 
 import Heading from "../../components/common/Heading";
 
@@ -34,10 +33,9 @@ const items = [
 ];
 
 
-
 function StoryDesign(props) {
     return (
-        <section className="section section-story section-story-1">
+        <section className="section section-story section-story-design">
             <div className="display-spacing">
                 <Heading position="center"
                          title="How does the design process look like"
@@ -48,25 +46,27 @@ function StoryDesign(props) {
                 </div>
 
                 {items.map((item, index) => (
-                <Container className="story-container">
+                    <Container className="story-container">
 
+                        <Row className="mb--45">
+                            <Col xl={6} className="column column-1" >
+                                <div className="heading-holder">
+                                    <div className="display-center">
+                                        <Heading
+                                            title={item.title}
+                                            description={item.body}
+                                        />
+                                    </div>
+                                </div>
 
-
-                    <Row className="mb--45">
-                        <Col xl={6} className="column column-1">
-                            <Heading
-                                title={item.title}
-                                description={item.body}
-                            />
-
-                        </Col>
-                        <Col xl={6} className="column column-2">
-                            <div className="story-image">
-                                <img src={item.image} alt="alt"/>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+                            </Col>
+                            <Col xl={6} className="column column-2" >
+                                <div className="story-image">
+                                    <img src={item.image} alt="alt"/>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 ))}
 
             </div>
