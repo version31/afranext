@@ -1,10 +1,9 @@
 import React from "react";
 import {Container, Row, Col} from "react-grid-system";
-import {FaGem, FaCrown, FaSend} from "react-icons/all";
 
 import Heading from "../../components/common/Heading";
 
-function Newsletter(props) {
+function Newsletter() {
     return (
         <section className="section section-newsletter section-newsletter-1">
             <div className="display-spacing">
@@ -12,7 +11,7 @@ function Newsletter(props) {
                     <Row>
                         <Col xl={7} >
                             <Heading
-                                title={["Check your", <br/>, "Website’s SEO!"]}
+                                title="Check your Website’s SEO!"
                                 description="Faff about only a quid blower I don’t want
 no agro bleeding chimney pot burke tosser
 cras nice one boot fanny."/>
@@ -20,11 +19,9 @@ cras nice one boot fanny."/>
 
                             <div className="input-group">
                                 <input type="text" placeholder="Enter URL:"/>
-                                <div className="input-group-append">
-                                    <button className="button button-md button-secondary button-block button-shape">Get
-                                        Started
-                                    </button>
-                                </div>
+                                <button className="button button-md button-secondary  button-shape">Get
+                                    Started
+                                </button>
                             </div>
 
                         </Col>

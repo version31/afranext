@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {Container, Row, Col} from 'react-grid-system';
 import Heading from "../../components/common/Heading";
 

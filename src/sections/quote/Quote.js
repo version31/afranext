@@ -20,7 +20,7 @@ function Quotes() {
                                     <div className="testimonial-image">
                                         <div className="circle">
                                             <div className="image overlay-image"
-                                                 style={{backgroundImage: `url(/assets/images/testimonial/2.jpg)`}}></div>
+                                                 style={{backgroundImage: `url(/assets/images/team/maryam.jpg)`}}></div>
                                         </div>
                                         <FaQuoteLeft className="icon"/>
                                     </div>
