@@ -1,9 +1,7 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-grid-system';
 
 // Components
 import Header from "../../components/header/Header";
-import Heading from "../../components/common/Heading";
 import Features from "../../sections/features/Features";
 import Story from "../../sections/story/Story";
 import Newsletter from "../../sections/newsletter/Newsletter";
