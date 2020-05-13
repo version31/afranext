@@ -54,7 +54,7 @@ function StoryMobile(props) {
                     <Container className="story-container" key={index}>
 
                         <Row className="mb--45">
-                            <Col xl={6} className="column column-1" >
+                            <Col xl={6} md={6} className="column column-1" >
                                 <div className="heading-holder">
                                     <div className="display-center">
                                         <Heading
@@ -65,7 +65,7 @@ function StoryMobile(props) {
                                 </div>
 
                             </Col>
-                            <Col xl={6} className="column column-2" >
+                            <Col xl={6} md={6} className="column column-2" >
                                 <div className="story-image">
                                     <img src={item.image} alt="alt"/>
                                 </div>

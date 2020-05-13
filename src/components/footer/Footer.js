@@ -1,8 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from "react-grid-system";
-import Heading from "../../components/common/Heading";
-import Quote from "../../sections/quote/Quote";
-import Slider1 from "../../components/common/Slider1";
 import {Link} from "react-router-dom";
 
 const items = [
@@ -10,14 +7,14 @@ const items = [
         title: "Introducing the new Next theme",
         body: "Brolly off his nut A bit of how’s your father chancer in my flat chinwag bog skive.",
         image: "/assets/images/blog/1-1.jpg",
-        url: "#",
+        url: "/posts/1",
         createdAt: "August 2021"
     },
     {
         title: "Buying the most of beautiful theme",
         body: "Brolly off his nut A bit of how’s your father chancer in my flat chinwag bog skive.",
         image: "/assets/images/blog/1-2.jpg",
-        url: "#",
+        url: "/posts/1",
         createdAt: "May 2021"
     },
 
@@ -25,7 +22,7 @@ const items = [
         title: "Introducing the new Next theme",
         body: "Brolly off his nut A bit of how’s your father chancer in my flat chinwag bog skive.",
         image: "/assets/images/blog/1-1.jpg",
-        url: "#",
+        url: "/posts/1",
         createdAt: "August 2021"
     },
 
@@ -34,28 +31,31 @@ const items = [
 
 const pages = [
     {
-        title: "Company",
-        url: "#",
+        url: "/",
+        title: "Home",
+        submenu: false,
     },
     {
-        title: "Blog",
-        url: "#",
+        url: "/about-us",
+        title: "About",
+        submenu: false,
     },
     {
-        title: "Documentation",
-        url: "#",
+        url: "/service",
+        title: "Service",
+        submenu: false,
     },
+
     {
-        title: "Careers",
-        url: "#",
+        url: "/contact",
+        title: "Contact",
+        submenu: false,
     },
+
     {
-        title: "Case studies",
-        url: "#",
-    },
-    {
-        title: "Pricing",
-        url: "#",
+        url: "/login",
+        title: "Sign in",
+        submenu: false,
     },
 
 ];
@@ -63,41 +63,45 @@ const pages = [
 
 const demos = [
     {
+        title: "Design",
+        url: "/design",
+    },
+    {
+        title: "Web Development",
+        url: "/web-development",
+    },
+    {
+        title: "Mobile Development",
+        url: "/mobile-development",
+    },
+
+    {
+        title: "ML & AI",
+        url: "/machine-learning",
+    },
+
+
+    {
         title: "Landing 01",
-        url: "#",
+        url: "/landing1",
     },
     {
         title: "Landing 02",
-        url: "#",
+        url: "/landing2",
     },
-    {
-        title: "Landing 03",
-        url: "#",
-    },
-    {
-        title: "Landing 04",
-        url: "#",
-    },
-    {
-        title: "Landing 05",
-        url: "#",
-    },
-    {
-        title: "Landing 06",
-        url: "#",
-    },
+
 
 ];
 
 
 function Footer() {
     return (
-        <section className="section section-footer section-footer-1">
+        <footer className="section section-footer section-footer-1 ">
             <div className="display-spacing">
                 <Container>
                     <div className="footer-container">
                         <Row>
-                            <Col xl={3}>
+                            <Col xl={3} md={3} sm={12}>
                                 <h2>NUXT</h2>
                                 <div className="info">
                                     <p>
@@ -108,8 +112,8 @@ function Footer() {
                                     </p>
                                 </div>
                             </Col>
-                            <Col xl={2}>
-                                <h3>Demos</h3>
+                            <Col xl={2} md={2} sm={6}>
+                                <h3>Services</h3>
                                 <ul className="links">
                                     {demos.map((item, index) => (
                                         <li key={index}>
@@ -118,7 +122,7 @@ function Footer() {
                                     ))}
                                 </ul>
                             </Col>
-                            <Col xl={2}>
+                            <Col xl={2} md={2} sm={6}>
                                 <h3>Pages</h3>
                                 <ul className="links">
                                     {pages.map((item, index) => (
@@ -128,23 +132,23 @@ function Footer() {
                                     ))}
                                 </ul>
                             </Col>
-                            <Col xl={5}>
+                            <Col xl={5} md={5} sm={12}>
                                 <h3>Articles</h3>
                                 <ul className="articles">
                                     {items.map((item, index) => (
-                                        <li>
-                                            <div>
-                                                <img src={item.image} alt={item.title}/>
-                                            </div>
-                                            <div>
-                                                <h4>
-                                                    <Link to={item.url}>
-                                                        {item.title}
-                                                    </Link>
-                                                </h4>
-                                                <p>{item.createdAt}</p>
-                                            </div>
-                                        </li>
+                                      <Link to={item.url} key={index}>
+                                          <li>
+                                              <div>
+                                                  <img src={item.image} alt={item.title}/>
+                                              </div>
+                                              <div>
+                                                  <h4>
+                                                      {item.title}
+                                                  </h4>
+                                                  <p>{item.createdAt}</p>
+                                              </div>
+                                          </li>
+                                      </Link>
                                     ))}
                                 </ul>
                             </Col>
@@ -157,7 +161,7 @@ function Footer() {
 
                 </Container>
             </div>
-        </section>
+        </footer>
     );
 }
 

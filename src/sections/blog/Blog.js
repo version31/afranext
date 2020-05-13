@@ -35,7 +35,7 @@ function Blog(props) {
                     <Row className="mb--30">
 
                         {items.map((item, index) => (
-                            <Col xl={4} key={index}>
+                            <Col xl={4} md={4}      key={index}>
                                 <div className="card">
                                     <div className="avatar">
                                         <img src={item.image} alt={item.title}/>

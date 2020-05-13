@@ -35,9 +35,11 @@ function HeaderNext(props) {
                             </ul>
                         </div>
 
-                        <button className="button button-md button-line-dark button-radius">
-                            Sign In
-                        </button>
+                        <Link to="/login">
+                            <button className="button button-md button-line-dark button-radius">
+                                Sign In
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </Container>
@@ -52,27 +54,18 @@ let items = [
         submenu: false,
     },
     {
-        url: "about",
+        url: "/about-us",
         title: "About",
         submenu: false,
     },
     {
-        url: "service",
+        url: "/service",
         title: "Service",
         submenu: false,
     },
+
     {
-        url: "portfolio",
-        title: "Portfolio",
-        submenu: false,
-    },
-    {
-        url: "",
-        title: "Pages",
-        submenu: false,
-    },
-    {
-        url: "contact",
+        url: "/contact",
         title: "Contact",
         submenu: false,
     },

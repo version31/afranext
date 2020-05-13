@@ -11,8 +11,8 @@ function Contact() {
                     <Container>
                         <Heading title={["Have a project? Let’s make it together!"]}  position="center"/>
                         <Row>
-                            <Col  xl={4}></Col>
-                            <Col  xl={4}>
+                            <Col  xl={4} md={4} sm={6}  ></Col>
+                            <Col  xl={4} md={4} sm={6}  >
                                 <div className="div-center">
                                     <Link to={"/contact"}>
                                         <button className="button button-xl button-block button-primary  button-shape">

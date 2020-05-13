@@ -10,7 +10,7 @@ function StoryAbout(props) {
             <div className="display-spacing">
                 <Container className="story-container">
                     <Row className="mb--45">
-                        <Col xl={7} className="column column-1">
+                        <Col xl={7} md={7} className="column column-1">
                             <Heading
                                 title="We offer"    />
                             <Row>
@@ -40,7 +40,7 @@ function StoryAbout(props) {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xl={5} className="column column-2">
+                        <Col xl={5} md={5} className="column column-2">
                             <div className="story-image">
                                 <img src="/assets/images/phones/mobile-app-4.png" alt="alt"/>
                             </div>

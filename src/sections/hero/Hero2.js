@@ -2,40 +2,51 @@ import React from "react";
 import {Container, Row, Col} from "react-grid-system";
 import Heading from "../../components/common/Heading";
 
-import Header from "../../components/header/Header";
 
 
 
 function Hero2() {
     return (
         <>
-            <section className="section section-hero section-hero-2">
+            <section className="section  section-hero-2">
 
                 <div className="display-center">
                     <Container>
                         <Row>
-                            <Col xl={6}>
-                                <Heading h1="One idea can change the world. New ideas will discover new worlds."
-                                />
+                            <Col xl={6} md={6}>
+                                <div className="img-holder" >
 
+                                    <div className="inner">
+                                        <div className="b1"></div>
+                                        <img className="t1" src="/assets/images/mockups/tablet1.png" alt="alt"/>
+                                        <img className="t2" src="/assets/images/mockups/tablet2.png" alt="alt"/>
+                                        <img className="t3" src="/assets/images/mockups/tablet3.png" alt="alt"/>
+                                        <img className="i1" src="/assets/images/mockups/iphonex1.png" alt="alt"/>
+                                        {/*<img  src="/assets/images/mockups/3.png" alt="alt"/>*/}
+                                        {/*<img  src="/assets/images/mockups/4.png" alt="alt"/>*/}
+                                        {/*<img  src="/assets/images/mockups/5.png" alt="alt"/>*/}
+                                        {/*<img  src="/assets/images/mockups/6.png" alt="alt"/>*/}
+                                    </div>
+                                </div>
+
+                            </Col>
+                            <Col xl={6} md={6}>
+                                <Heading
+                                    h1={"Drive More Customers Through Digital"}
+                                    // subTitle={"Let’s go Mobile world. Impactful custom app development it is about us."}
+                                    description="Leverage our comprehensive approach for industry-specific solutions. We provide our clients with both cross-platform or native apps considering all business needs. We’ve been using the most innovative technologies to increase business security, improve key operations and provide an exceptional user experience for the customers.
+
+"
+                                />
+                                <button className="button button-xl button-primary button-block button-shape">Get
+                                    Started
+                                </button>
 
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <div className="img-holder" style={{backgroundImage: `url(/assets/images/hero/2-bg.png)`}}>
-                    <div className="inner">
-                        <img className="lamp" src="/assets/images/hero/2-lamp.png" alt="alt"/>
-                        <img className="girl" src="/assets/images/hero/2-girl.png" alt="alt"/>
 
-                        <img className="heart" src="/assets/images/hero/2-heart.png" alt="alt"/>
-                        <img className="resize" src="/assets/images/hero/2-resize.png" alt="alt"/>
-                        <img className="like" src="/assets/images/hero/2-like.png" alt="alt"/>
-                        <div className="square one"></div>
-                        <div className="square two"></div>
-                        <div className="square three"></div>
-                    </div>
-                </div>
 
             </section>
         </>

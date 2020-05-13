@@ -2,7 +2,6 @@ import React from "react";
 import {Container, Row, Col} from "react-grid-system";
 import Heading from "../../components/common/Heading";
 
-import Header from "../../components/header/Header";
 
 
 
@@ -13,10 +12,10 @@ function HeaderNext() {
                 <div className="display-center">
                     <Container>
                         <Row>
-                            <Col xl={6}>
+                            <Col xl={6} md={6}>
                                 <Heading
                                     h1="One idea can change the world."
-                                    h1="One idea can change the world. New ideas will discover new worlds."
+                                    subTitle="New ideas will discover new worlds."
                                 />
 
 

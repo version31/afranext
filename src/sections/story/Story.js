@@ -51,10 +51,10 @@ function Story(props) {
                 {stories.map((story, index) => (
                     <Container key={index} className="story-container">
                         <Row className="mb--45">
-                            <Col xl={6} className="column column-1">
+                            <Col xl={6} md={6} className="column column-1">
                                 <Heading title={story.title} description={story.description}/>
                                 <Row>
-                                    <Col xl={9}>
+                                    <Col xl={9} md={9}>
                                         {story.items.map((item, index) => (
                                             <div className="story-item" key={index}>
                                                 <button className="button button-circle button-icon-xl button-primary">
@@ -68,7 +68,7 @@ function Story(props) {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col xl={6} className="column column-2">
+                            <Col xl={6} md={6} className="column column-2">
                                 <div className="story-image">
                                     <img src={story.image} alt="alt"/>
                                 </div>

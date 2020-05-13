@@ -29,7 +29,7 @@ function Features(props) {
  crikey Why gormless, pear shaped!" position="center"/>
                     <Row className="mb--30">
                         {featureList.map((value, index) => (
-                            <Col xl={4} key={index}>
+                            <Col xl={4} md={4} sm={6}    key={index}>
                                 <div className="feature-item">
                                     <div className="image">
                                         <img src={value.image} alt="alt"/>

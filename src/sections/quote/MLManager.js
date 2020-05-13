@@ -18,7 +18,7 @@ function MLManager(props) {
                     <Slider1 className="el-slider-1">
                         <div className="item">
                             <Row>
-                                <Col xl={5}>
+                                <Col xl={5} md={5}>
                                     <div className="testimonial-image">
                                         <div className="circle">
                                             <div className="image overlay-image"
@@ -27,7 +27,7 @@ function MLManager(props) {
                                         <FaQuoteLeft className="icon"/>
                                     </div>
                                 </Col>
-                                <Col xl={7}>
+                                <Col xl={7} md={7}>
                                     <div className="testimonial-item">
                                         <div>
                                             <span className="name">{name}</span>

@@ -9,7 +9,7 @@ function Newsletter() {
             <div className="display-spacing">
                 <Container>
                     <Row>
-                        <Col xl={7} >
+                        <Col xl={7} md={7} >
                             <Heading
                                 title="Check your Website’s SEO!"
                                 description="Faff about only a quid blower I don’t want
@@ -25,7 +25,7 @@ cras nice one boot fanny."/>
                             </div>
 
                         </Col>
-                        <Col xl={4} >
+                        <Col xl={4} md={4} sm={6}   >
                             <img className="left" src="/assets/images/phones/iPhoneX-left.png" alt="alt"/>
                             <img className="right" src="/assets/images/phones/iPhoneX-Right.png" alt="alt"/>
                         </Col>
