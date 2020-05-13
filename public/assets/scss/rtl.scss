@@ -1,0 +1,107 @@
+blockquote blockquote {
+    margin-left: 0;
+}
+
+menu,
+ol,
+ul {
+    margin: 16px 0;
+    padding: 0 40px 0 0;
+}
+
+
+input[type=search] {
+    padding-left: 2px;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+
+td {
+    padding: 6px 0 6px 10px;
+}
+
+
+@keyframes progress-bar-stripes {
+    to {
+        background-position: 100% 0;
+    }
+}
+
+
+.pl-0 {
+    padding-right: 0 !important;
+}
+.pr-0 {
+    padding-left: 0 !important;
+}
+/*------------------------------------
+    Helpers
+------------------------------------*/
+.text-left {
+    text-align: right;
+}
+.text-right {
+    text-align: left;
+}
+
+
+
+.display-center {
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+.shadow-left {
+    box-shadow: 60px 43px 90px rgba(13, 134, 215, 0.18);
+}
+.shadow-right {
+    box-shadow: -60px 43px 90px #ccc;
+}
+
+.row-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.row-0 > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/*_______________________________*/
+
+
+.square.one {
+    left: auto;
+    right: 1%;
+}
+.square.two {
+    left: auto;
+    right: 22%;
+}
+.square.three {
+    left: auto;
+    right: 89%;
+}
+
+
+.section-features-mobile .feature-item {
+    border-radius: 0 36px 36px 36px;
+}
+
+.section-features-mobile .feature-item header {
+    padding: 30px 40px 30px 30px;
+}
+.section-features-mobile .feature-item p {
+    padding: 16px 30px 30px 5px;
+}
+
+
+

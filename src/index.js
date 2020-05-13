@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Stylesheet
-import "./index.scss";
+// import "./index.scss";
 
 // Scenes
 import Sample from "./scenes/sample/Sample";
